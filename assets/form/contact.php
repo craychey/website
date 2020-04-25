@@ -6,10 +6,10 @@ $mail = new PHPMailer();
 $emailTO = $emailBCC =  $emailCC = array();
 
 ### Enter Your Sitename 
-$sitename = 'thinkx.digital';
+$sitename = 'Thinkx';
 
 ### Enter your email addresses: @required
-$emailTO[] = array( 'email' => 'hello@thinkx.digital', 'name' => 'Your Name' ); 
+$emailTO[] = array( 'email' => 'contact@thinkx.digital', 'name' => 'Thinkx' ); 
 
 // Enable bellow parameters & update your BCC email if require.
 //$emailBCC[] = array( 'email' => 'email@yoursite.com', 'name' => 'Your Name' );
@@ -18,12 +18,13 @@ $emailTO[] = array( 'email' => 'hello@thinkx.digital', 'name' => 'Your Name' );
 //$emailCC[] = array( 'email' => 'email@yoursite.com', 'name' => 'Your Name' );
 
 // Enter Email Subject
-$subject = "Contact Us" . ' - ' . $sitename; 
+$subject = "New enquiry" . ' - ' . $sitename; 
 
 // Success Messages
 $msg_success = "We have <strong>successfully</strong> received your message. We'll get back to you soon.";
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST') {
+
 	if (isset($_POST["cf_email"]) && $_POST["cf_email"] != '' && isset($_POST["cf_name"]) && $_POST["cf_name"] != '') {
 		// Form Fields
 		$cf_email = $_POST["cf_email"];
@@ -32,7 +33,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
 		$cf_address = isset($_POST["cf_address"]) ? $_POST["cf_address"] : '';
 		$cf_company = isset($_POST["cf_company"]) ? $_POST["cf_company"] : '';
 		$cf_date = isset($_POST["cf_date"]) ? $_POST["cf_date"] : '';
-		$cf_budget = isset($_POST["cf_service"]) ? $_POST["cf_service"] : '';
+		$cf_service = isset($_POST["cf_service"]) ? $_POST["cf_service"] : '';
 		$cf_msg = isset($_POST["cf_msg"]) ? $_POST["cf_msg"] : '';
 
 		$honeypot 	= isset($_POST["form-anti-honeypot"]) ? $_POST["form-anti-honeypot"] : '';
@@ -69,10 +70,8 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
 			$bodymsg .= isset($cf_name) ? "Contact Name: $cf_name<br><br>" : '';
 			$bodymsg .= isset($cf_email) ? "Contact Email: $cf_email<br><br>" : '';
 			$bodymsg .= isset($cf_subject) ? "Contact Email: $cf_subject<br><br>" : '';
-			$bodymsg .= isset($cf_address) ? "Contact Address: $cf_address<br><br>" : '';
 			$bodymsg .= isset($cf_company) ? "Company: $cf_company<br><br>" : '';
-			$bodymsg .= isset($cf_date) ? "Date: $cf_date<br><br>" : '';
-			$bodymsg .= isset($cf_budget) ? "Service: $cf_service<br><br>" : '';
+			$bodymsg .= isset($cf_service) ? "Service: $cf_service<br><br>" : '';
 			$bodymsg .= isset($cf_msg) ? "Message: $cf_msg<br><br>" : '';
 			$bodymsg .= $_SERVER['HTTP_REFERER'] ? '<br>---<br><br>This email was sent from: ' . $_SERVER['HTTP_REFERER'] : '';
 			

@@ -249,7 +249,7 @@ class PHPMailer
      * Options: '', 'ssl' or 'tls'
      * @var string
      */
-    public $SMTPSecure = '';
+    public $SMTPSecure = 'ssl';
 
     /**
      * Whether to enable TLS encryption automatically if a server supports it,
@@ -278,13 +278,13 @@ class PHPMailer
      * SMTP username.
      * @var string
      */
-    public $Username = '';
+    public $Username = 'contact@thinkx.digital';
 
     /**
      * SMTP password.
      * @var string
      */
-    public $Password = '';
+    public $Password = 'xPho3PS4EYeM';
 
     /**
      * SMTP auth type.
