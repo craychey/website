@@ -2327,7 +2327,7 @@ h6, .h6, .fz-6 { font-size: 0.875rem; }
   .is-boxed .header-box .banner { padding: 0 140px; } }
 .header-100vh { height: 100vh; }
 
-.header-sidebar { display: flex; justify-content: space-between; padding: 20px 15px; background: #fff; align-items: center; }
+.header-sidebar { display: flex; justify-content: space-between; padding: 20px 15px; background: #1F2D40; align-items: center; }
 .header-sidebar:focus { background: #ffffff; }
 .header-sidebar .header-logo { margin: 0; }
 .header-contact { color: #ffd0d5; }
@@ -2336,7 +2336,7 @@ h6, .h6, .fz-6 { font-size: 0.875rem; }
 .header-contact ul li a { font-size: 24px; display: inline-block; color: #ffffff; font-weight: 700; position: relative; }
 .header-contact ul li a:after { position: absolute; left: 0; bottom: 5px; height: 2px; width: 100%; background: currentColor; content: ""; }
 
-.header-navbar-creative::before { background: #06FEC3; }
+.header-navbar-creative::before { background: #1F2D40; }
 .header-social li { display: inline-block; }
 .header-social li a { padding: 0 2.5px; }
 
