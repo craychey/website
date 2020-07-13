@@ -21,7 +21,7 @@ $emailTO[] = array( 'email' => 'contact@thinkx.digital', 'name' => 'Thinkx' );
 $subject = "New enquiry" . ' - ' . $sitename; 
 
 // Success Messages
-$msg_success = "We have <strong>successfully</strong> received your message. We'll get back to you in the next 2-3 business days.";
+$msg_success = "You have <strong>successfully</strong> sent your message! We'll get back to you in the next 2-3 business days.";
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST') {
 
