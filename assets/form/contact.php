@@ -73,6 +73,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
 			$bodymsg .= isset($cf_company) ? "Company: $cf_company<br><br>" : '';
 			$bodymsg .= isset($cf_service) ? "Service: $cf_service<br><br>" : '';
 			$bodymsg .= isset($cf_msg) ? "Message: $cf_msg<br><br>" : '';
+			isset($_POST['checkboxNDA'])
 			$bodymsg .= $_SERVER['HTTP_REFERER'] ? '<br>---<br><br>This email was sent from: ' . $_SERVER['HTTP_REFERER'] : '';
 			
 			$mail->MsgHTML( $bodymsg );
