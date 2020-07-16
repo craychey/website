@@ -2673,7 +2673,7 @@ h6, .h6, .fz-6 { font-size: 0.875rem; }
   .section-l.is-bg-half { padding-top: 120px; }
   .section-pb-l { padding-bottom: 120px !important; }
   .section-pt-l { padding-top: 120px !important; }
-  .section-x { padding-top: 150px; padding-bottom: 150px; }
+  .section-x { padding-top: 150px; /* padding-bottom: 150px; */ }
   .section-x.is-bg-half { padding-top: 150px; }
   .section-pb-x { padding-bottom: 150px !important; }
   .section-pt-x { padding-top: 150px !important; }
